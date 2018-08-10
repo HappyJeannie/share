@@ -1,0 +1,286 @@
+.mt40 {
+  margin-top: 40px;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.fb {
+  font-weight: bold;
+}
+.f24 {
+  font-size: 24px;
+}
+.f22 {
+  font-size: 22px;
+}
+.red {
+  color: red;
+}
+.tc {
+  text-align: center;
+}
+#myMenu {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  width: 90px;
+  margin: -160px 0 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 70;
+}
+#myMenu li {
+  margin-top: 10px;
+  font: 14px "Microsoft Yahei";
+  color: #444;
+  background-color: #fff;
+}
+#myMenu li.active {
+  color: #0074ea;
+  background-color: #ff9805;
+}
+#myMenu li.active a {
+  color: #444;
+  font-weight: bold;
+  box-shadow: 4px 4px 3px #fff;
+}
+#myMenu li a {
+  color: #444;
+  font-size: 16px;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+#fullpage .section {
+  background-image: url(../img/bg-img2.jpg);
+  background-size: cover;
+  color: #fff;
+}
+#fullpage .section .inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-image: url(../img/bg-img2.jpg);
+  background-size: cover;
+}
+#fullpage .section .inner .slide .inner-wrapper {
+  position: relative;
+  width: 78%;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 5%;
+}
+#fullpage .section .inner .slide .inner-wrapper h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#fullpage .section .inner .slide .inner-wrapper .para {
+  text-indent: 2em;
+  font-size: 16px;
+  font-weight: bold;
+}
+#fullpage .section .inner .slide .inner-wrapper .text-content .text-left,
+#fullpage .section .inner .slide .inner-wrapper .text-content .text-right {
+  float: left;
+  width: 50%;
+}
+#fullpage .section .inner .slide .inner-wrapper .text-content .text-left ol li,
+#fullpage .section .inner .slide .inner-wrapper .text-content .text-right ol li {
+  font-size: 22px;
+}
+#fullpage .section .inner .slide .inner-wrapper .text-content > div ul li {
+  margin-left: -28px;
+}
+#fullpage .section .inner .slide .inner-wrapper .text-content > div img {
+  margin: 20px auto 0;
+  display: -webkit-box;
+}
+#fullpage .section .inner .slide .inner-wrapper .text-content .move-li {
+  margin-left: 30px;
+}
+#fullpage .section .inner .slide .inner-wrapper .list li {
+  font-size: 26px;
+  line-height: 48px;
+}
+#fullpage .section .fp-controlArrow {
+  top: 94%;
+}
+#fullpage .section .fp-controlArrow.fp-prev {
+  border-width: 28.5px 30px 28.5px 0;
+  border-color: transparent #ccc transparent transparent;
+}
+#fullpage .section .fp-controlArrow.fp-next {
+  border-width: 28.5px 0 28.5px 30px;
+  border-color: transparent transparent transparent #ccc;
+}
+#fullpage .section.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+#fullpage .section.home > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+#fullpage .section.traditional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#fullpage .section.traditional div.content {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+}
+#fullpage .section.traditional div.content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#fullpage .section.traditional div.content div.item {
+  margin-bottom: 30px;
+}
+#fullpage .section.traditional div.content div.item h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+#fullpage .section.traditional div.content div.item ul {
+  padding-left: 20px;
+}
+#fullpage .section.traditional div.content div.item ul li {
+  list-style: circle;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+#fullpage .section.vue > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#fullpage .section.vue > div div.item {
+  margin-bottom: 30px;
+}
+#fullpage .section.vue > div div.item h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+#fullpage .section.vue > div div.item ul {
+  padding-left: 20px;
+}
+#fullpage .section.vue > div div.item ul li {
+  list-style: circle;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+#fullpage .section.vue > div div.slides {
+  width: 80%;
+  margin: 0 auto;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper ul {
+  padding-left: 20px;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper ul li {
+  list-style: circle;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper ul li ul {
+  margin-left: 30px;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper ul li ul li {
+  list-style-type: square;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper .text-left {
+  width: 100%!important;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper .demo {
+  margin-top: 50px;
+}
+#fullpage .section.vue > div .slide02 div.inner-wrapper .demo a {
+  display: block;
+}
+#fullpage .section.vue > div .slide02.slide03 div.inner-wrapper div.text-content .demo {
+  margin-top: 0px;
+}
+#fullpage .section.vue > div .slide02.slide03 div.inner-wrapper div.text-content .demo div {
+  display: inline-block;
+  width: 50%;
+  margin-right: 2%;
+}
+#fullpage .section.vue > div .slide02.slide03 div.inner-wrapper div.text-content .demo div:last-child {
+  width: 34%;
+}
+#fullpage .section.vue > div .slide02.slide03 div.inner-wrapper div.text-content .demo div img {
+  width: 100%;
+}
+#fullpage .section.react > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#fullpage .section.react > div p {
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: normal;
+}
+#fullpage .section.react > div div.item {
+  margin-bottom: 30px;
+}
+#fullpage .section.react > div div.item h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+#fullpage .section.react > div div.item ul {
+  padding-left: 20px;
+}
+#fullpage .section.react > div div.item ul li {
+  list-style: circle;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+#fullpage .section.summary .inner-wrapper .container {
+  display: flex;
+  flex-direction: row;
+}
+#fullpage .section.summary .inner-wrapper .container > div:first-child {
+  width: 300px;
+}
+#fullpage .section.summary .inner-wrapper .container > div:last-child {
+  flex: 1;
+}
+#fullpage .section.summary .inner-wrapper .container > div h3 {
+  margin-bottom: 20px;
+}
+#fullpage .section.summary .inner-wrapper .container > div ul {
+  padding-left: 20px;
+}
+#fullpage .section.summary .inner-wrapper .container > div ul li {
+  list-style: circle;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}

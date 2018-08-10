@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>分享</title>
+	<!-- <link href="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+	<script src="js/easings.min.js"></script>
+</head>
+
+<body>
+	<ul id="myMenu">
+		<li data-menuanchor="firstPage" class="active">
+			<a href="#firstPage">首页</a>
+		</li>
+		<li data-menuanchor="secondPage">
+			<a href="#secondPage">传统开发</a>
+		</li>
+		<li data-menuanchor="thirdPage">
+			<a href="#thirdPage">Vue</a>
+		</li>
+		<li data-menuanchor="fourthPage">
+			<a href="#fourthPage">React</a>
+		</li>
+		<li data-menuanchor="lastPage">
+			<a href="#lastPage">总结</a>
+		</li>
+	</ul>
+	<div id="fullpage">
+		<div class="section active home">
+			Vue / React 分享
+		</div>
+		<div class="section traditional">
+			<div class="content">
+					<h1>传统的开发:</h1>
+					<div class="item">
+							<h2>特点：</h2>
+							<ul>
+									<li>HTML+CSS+JavaScript+JQuery</li>
+									<li>以 HCCF 管理后台为例，使用了 Spring 框架开发，MVC 结构清晰，但是前后端代码耦合度较高，要求后端开发人员懂前端，前端开发人员懂 JSP ，维护起来不方便</li>
+									<li>大量操作 DOM ，在 JS 文件中我们经常会看到诸如此类的代码： $().parent().siblings().children().find().html() 等等，如果页面结构发生改变，JS 将会产生大量的报错</li>
+								</ul>
+					</div>
+					<div class="item">
+							<h2>前后端分离：</h2>
+							<ul>
+								<li>前端负责界面</li>
+								<li>后端提供接口</li>
+							</ul>
+					</div>
+					<div class="item">
+							<p>大量操作 DOM ，页面重复引入文件（每个页面有相同的模块）问题仍旧未解决</p>
+						</div>
+			</div>
+			
+		</div>
+		<div class="section vue">
+			<div class="vue-inner inner">
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>Vue</h1>
+						<div class="item">
+							<h2>什么是 Vue ?</h2>
+							<ul>
+								<li>数据驱动</li>
+								<li>渐进式</li>
+								<li>通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件</li>
+							</ul>
+						</div>
+						<div class="item">
+								<h2>特点：	</h2>
+								<ul>
+									<li>组件化</li>
+									<li>双向数据绑定</li>
+									<li>数据驱动</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>组件化</h1>
+						<div class="text-content clearfix">
+							<div class="text-left">
+								<div class="txt">
+									<ul>
+										<li>目的:让页面的元素的使用性和复用性更高，并且让一个组件具有自己独立的功能，组件无论到了什么地方都可以保证功能运行</li>
+										<li>使用:<br />
+											<ul>
+												<li>通过Vue.extend()声明组件</li>
+												<li>将组件注册到Vue容器里面</li>
+												<li>声明Vue管理边界</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="demo">
+										<a href="http://localhost:8081"> <img src="./img/6.png" height="200"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02 slide03">
+					<div class="inner-wrapper">
+						<h1>双向绑定</h1>
+						<div class="text-content clearfix">
+							<div class="text-left">
+								<ul>
+									<li>数据的双向绑定是vue实现的一大功能。</li>
+									<li>所谓双向绑定，指的是vue实例中的data与其渲染的DOM元素的内容保持一致，无论谁被改变，另一方会相应的更新为相同的数据。这是通过设置属性访问器实现的。</li>
+									<li>v-model主要用在表单的input输入框，完成视图和数据的双向绑定。</li>
+								</ul>
+							</div>
+							<div class="demo">
+								<div>
+										<h4>代码:</h4>
+										<img src="img/4.png" alt="">
+								</div>
+								<div>
+										<h4>效果:</h4>
+										<img src="img/GIF.gif" alt="">
+								</div>
+							</div>
+						</div>
+						<a href="./demo/index.html" target="_blank">在线测试</a>
+					</div>
+				</div>
+				<div class="slide slide02 slide03">
+					<div class="inner-wrapper">
+						<h1>数据驱动</h1>
+						<div class="text-content clearfix">
+							<ul>
+								<li>数据驱动是vuejs最大的特点。在vuejs中，所谓的数据驱动就是当数据发生变化的时候，用户界面发生相应的变化，开发者不需要手动的去修改dom。</li>
+								<li>vuejs帮我们封装了数据和dom对象操作的映射，我们只需要关心数据的逻辑处理，数据的变化就能够自然的通知页面进行页面的重新渲染。</li>
+								<li>不需要再在代码中频繁地去操作dom了，在实际项目中，我们有很大部分代码都是在数据修改以后，手动操作重新渲染页面元素，当页面越来越复杂的时候，页面代码组织会越来难以维护。</li>
+								<li>Vue.js的数据驱动就是通过MVVM来实现的</li>
+							</ul>
+							<div class="demo">
+								<div>
+										<h4>代码:</h4>
+										<img src="img/5.png" alt="" width="500">
+								</div>
+								<div>
+										<h4>效果:</h4>
+										<img src="img/GIF2.gif" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>打包发布</h1>
+						<div>
+							<img src="./img/vue-dist.png" height="500">
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>优缺点</h1>
+						<div class="item">
+								<h2>优点</h2>
+								<ul>
+									<li>数据驱动</li>
+									<li>组件化操作，高度复用</li>
+									<li>双向绑定</li>
+									<li>配置 webpack 打包 能够输出较小的文件</li>
+									<li>敏捷开发</li>
+									<li>单页应用</li>
+								</ul>
+						</div>
+						<div class="item">
+								<h2>缺点</h2>
+								<ul>
+									<li>不利于 SEO ( SSR or Nuxt )</li>
+									<li>>= IE9</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>应用场景</h1>
+						<div>
+							<ul>
+								<li>简单和“能用就行”的东西: <br/><br/>可以像 jquery 一样直接引入，无需编译直接运行，react 也可以这么做，但是 react 更加依赖于 JSX 和诸如 class 之类的 ES6 特性 </li>
+								<br/><li>应用尽可能的小和快 ：<br/><br/> Vue的渲染系统比React的更快</li>
+								<br/><li>简单明了，易于理解</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section react vue">
+			<div class="react-inner inner">
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>React</h1>
+						
+							<div class="item">
+								<h2>什么是 React ?</h2>
+								<ul>
+									<li>用于构建用户界面的 JAVASCRIPT 库</li>
+									<li>用于构建 UI</li>
+									<li>React 是 MVC 中的 V（视图）</li>
+								</ul>
+							</div>
+							<div class="item">
+									<h2>特点：	</h2>
+									<ul>
+										<li>Declarative(声明式编码)</li>
+										<li>Component-Based(组件化编码)</li>
+										<li>Write Anywhere(支持客户端与服务器渲染)</li>
+										<li>最小化页面重绘</li>
+										<li>单向数据流</li>
+										<li>虚拟DOM</li>
+										<li>JSX（JS+XML）</li>
+									</ul>
+								</div>
+								<div class="item">
+									<a href="#" target="_blank">Demo</a>
+								</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>React 优点</h1>
+						<div class="item">
+							<ul>
+								<li class="mb10">
+									<p class="title">高效</p>
+									<p>操作虚拟 DOM</p>
+								</li>
+								<li class="mb10">
+									<p class="title">Javascript 库</p>
+									<p>JSX 是 Javascript 和 HTML 的完美结合，可专门用于 ReactJS ，简化编写组件的流程。它的的主要优势是合理地利用了本地API达到了跨平台的效果。</p>
+								</li>
+								<li class="mb10">
+										<p class="title">SEO友好</p>
+										<p>JavaScript 框架的缺陷之一是对搜索引擎十分不友好。但是，React.js在这方面却做的很出色。可在服务器端运行 React.js ，虚拟 DOM 可以像常规的 web 页面一样返回给浏览器</p>
+									</li>
+									<li>
+											<p class="title">跨浏览器兼容</p>
+											<p>虚拟 DOM 帮助我们解决了跨浏览器问题，它为我们提供了标准化的API，兼容 IE8 。</p>
+										</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>应用场景</h1>
+						<div class="item">
+							<ul>
+								<li class="mb10">
+									<p>构建一个大型应用程序：</p>
+									<ul>
+										<li>项目规模大时，Vue 模板容易出现很难注意到的运行时错误</li>
+										<li>React 的 Javascript 模板可以组织成具有很好的分解性和干（DRY）代码的组件</li>
+										<li>React 的渲染系统可配置性更强</li>
+										<li>React 的可测试性和可维护性更好</li>
+									</ul>
+									</li>
+								<li class="mt20 mb10">
+									<p>Web端和原生APP的框架：</p>
+									<ul>
+										<li>React Native是一个使用Javascript构建移动端原生应用程序（iOS，Android）的库</li>
+										<li>与React.js相同，只是不使用Web组件，而是使用原生组件。 </li>
+										<li>只需要一套知识和工具就能开发Web应用和移动端原生应用</li>
+									</ul>
+									 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section summary">
+			<div class="summary-inner inner">
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>总结</h1>
+						<div class="container">
+							<div>
+								<h3>Vue</h3>
+								<ul>
+									<li>轻量级的框架</li>
+									<li>适用于小而快的应用</li>
+									<li>双向数据绑定</li>
+									<li>组件化</li>
+									<li>自定义指令</li>
+									<li>数据管理 Vuex</li>
+									<li>不兼容 IE8 及其以下</li>
+									
+								</ul>
+							</div>
+							<div>
+								<h3>React</h3>
+								<ul>
+									<li>量级较大</li>
+									<li>适用于大型应用</li>
+									<li>单向数据流</li>
+									<li>组件化</li>
+									<li>声明式设计：React采用声明范式，可以轻松描述应用</li>
+									<li>数据管理 Flux</li>
+									<li>兼容性好：比如使用RequireJS来加载和打包，而Browserify和Webpack适用于构建大型应用。它们使得那些艰难的任务不再让人望而生畏</li>
+									<li>React本身只是一个 View 而已，并不是一个完整的框架，所以如果是大型项目想要一套完整的框架的话，基本都需要加上 ReactRouter 和 Flux 才能写大型应用。</li> 
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	$(function () {
+		$('#fullpage').fullpage({
+			//Navigation
+			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+			menu: '#myMenu',
+			//Design
+			sectionsColor: ['#eaeaea', 'eaeaea', 'eaeaea', '#eaeaea', '#eaeaea'], //为每个section设置background-color属性
+			afterLoad: function (anchorLink, index) {
+				var loadedSection = $(this);
+				if (index == 1) {
+
+				}
+			}
+		});
+	});
+</script>
+
+</html>
