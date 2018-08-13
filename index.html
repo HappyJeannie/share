@@ -93,15 +93,26 @@
 										<li>目的:让页面的元素的使用性和复用性更高，并且让一个组件具有自己独立的功能，组件无论到了什么地方都可以保证功能运行</li>
 										<li>使用:<br />
 											<ul>
-												<li>通过Vue.extend()声明组件</li>
-												<li>将组件注册到Vue容器里面</li>
-												<li>声明Vue管理边界</li>
+												<li>声明组件</li>
+												<li>注册组件</li>
 											</ul>
 										</li>
 									</ul>
 								</div>
 								<div class="demo">
 										<a href="http://localhost:8081"> <img src="./img/6.png" height="200"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide02">
+					<div class="inner-wrapper">
+						<h1>组件化</h1>
+						<div class="text-content clearfix">
+							<div class="text-left">
+								<div class="demo" style="margin-top: -40px">
+										<a href="#"> <img src="./img/8.png" height="500"></a>
 								</div>
 							</div>
 						</div>
@@ -137,10 +148,10 @@
 						<h1>数据驱动</h1>
 						<div class="text-content clearfix">
 							<ul>
-								<li>数据驱动是vuejs最大的特点。在vuejs中，所谓的数据驱动就是当数据发生变化的时候，用户界面发生相应的变化，开发者不需要手动的去修改dom。</li>
-								<li>vuejs帮我们封装了数据和dom对象操作的映射，我们只需要关心数据的逻辑处理，数据的变化就能够自然的通知页面进行页面的重新渲染。</li>
-								<li>不需要再在代码中频繁地去操作dom了，在实际项目中，我们有很大部分代码都是在数据修改以后，手动操作重新渲染页面元素，当页面越来越复杂的时候，页面代码组织会越来难以维护。</li>
-								<li>Vue.js的数据驱动就是通过MVVM来实现的</li>
+								<li>数据驱动是 vuejs 最大的特点。当数据发生变化的时候 => 用户界面发生相应的变化(开发者不需要手动的去修改 dom )。</li>
+								<li>vuejs 封装了数据和 dom 对象操作的映射，我们只关心数据的逻辑处理，数据的变化就能够通知页面进行页面的重新渲染。</li>
+								<li>不需要再在代码中频繁地去操作 dom </li>
+								<li>Vue.js 的数据驱动就是通过 MVVM 来实现的</li>
 							</ul>
 							<div class="demo">
 								<div>
@@ -209,26 +220,105 @@
 							<div class="item">
 								<h2>什么是 React ?</h2>
 								<ul>
-									<li>用于构建用户界面的 JAVASCRIPT 库</li>
+									<li>用于构建用户界面的 JavaScript 库</li>
 									<li>用于构建 UI</li>
 									<li>React 是 MVC 中的 V（视图）</li>
 								</ul>
 							</div>
 							<div class="item">
-									<h2>特点：	</h2>
+									<h2>特点（核心概念）：</h2>
 									<ul>
-										<li>Declarative(声明式编码)</li>
-										<li>Component-Based(组件化编码)</li>
-										<li>Write Anywhere(支持客户端与服务器渲染)</li>
-										<li>最小化页面重绘</li>
-										<li>单向数据流</li>
+										<li>声明式渲染(Declarative)</li>
+										<li>基于组件(Component-Based)</li>
+										<li>支持客户端与服务器渲染(Write Anywhere)</li>
+										<li>高效--高效的DOM Diff算法, 最小化页面重绘</li>
 										<li>虚拟DOM</li>
-										<li>JSX（JS+XML）</li>
+										<li>单向数据流</li>
+										<!-- 
+										<li>JSX（JS+XML）</li> -->
 									</ul>
 								</div>
 								<div class="item">
 									<a href="#" target="_blank">Demo</a>
 								</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>声明式渲染 与 组件</h1>
+						<div class="item">
+							<ul>
+								<li class="mb10">
+									<p class="title">命令式： </p>
+									<p>document.create(xxxxx).append(xxxx) 你应该这么做
+									</p>
+								</li>
+								<li class="mb10">
+									<p class="title">声明式：</p>
+									<p>render.&lt;jsx&gt; 你应该给我一个这样的结果，即描述我们想要的是什么</p>
+								</li>
+								<li class="mb10">
+									<p class="title">模板语法：</p>
+									<p>全部写在 JS 文件中，能使用所有的 JS 语法，更加灵活</p>
+								</li>
+							</ul>
+							<div class="demo" style="">
+									<a href="#"> <img src="./img/9.png" height="400"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>高效 / 虚拟 DOM</h1>
+						<div class="item">
+							<ul>
+								<li class="mb10">
+									<p class="title">高效： </p>
+									<p>最小化重绘页面
+									</p>
+								</li>
+								<li class="mb10">
+									<p class="title">虚拟 DOM :</p>
+									<ul>
+										<li>对于 HTML DOM 节点的抽象描述，可以看成是一种 Javascript 实现的结构</li>
+										<li>不需要浏览器 DOM API 的支持</li>
+										<li>组件的 DOM 结构映射到 Virtual dom 上</li>
+										<li> Diff 算法</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="demo" style="text-align: center;">
+								<a href="#"> <img src="./img/10.png" height="200" style="margin: 0 auto;"></a>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="inner-wrapper">
+						<h1>其他</h1>
+						<div class="item">
+							<ul>
+								<li class="mb10">
+									<p class="title">客户端与服务端渲染： </p>
+									<p>利于实现 SEO
+									</p>
+								</li>
+								<li class="mb10">
+									<p class="title">单项数据绑定：</p>
+									<p>只能通过 this.setState() 修改数据</p>
+								</li>
+								<li class="mb10">
+									<p class="title">JSX 语法：</p>
+									<ul>
+										<li>React 使用 JSX 来替代常规的 JavaScript</li>
+										<li>JSX 执行更快，因为它在编译为 JavaScript 代码后进行了优化</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#">Demo</a>
+						</div>
 					</div>
 				</div>
 				<div class="slide">
